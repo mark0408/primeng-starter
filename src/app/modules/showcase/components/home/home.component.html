@@ -1,0 +1,32 @@
+<div class="layout-wrapper">
+  <!--  Header -->
+  <app-header [categoryId]="elementClicked" (messageToEmit)="getMessage($event)"></app-header>
+  <!-- /.Header -->
+  <!--Control  Asidebar  -->
+  <app-aside [asideMenuIsVisible]="asideMenuIsVisibleFromP"></app-aside>
+  <!-- /.Control Aside-bar -->
+  <div class="layout-content">
+
+    <!-- bread-crumb  -->
+
+    <!-- /.bread-crumb  -->
+
+    <!-- Main content -->
+    <div class="content-section content-outlet">
+      home works !
+      <router-outlet></router-outlet>
+
+    </div>
+    <!-- /.content -->
+
+
+
+
+
+    <!-- Main Footer -->
+    <app-footer> </app-footer>
+    <!-- ./wrapper -->
+
+  </div>
+
+</div>
